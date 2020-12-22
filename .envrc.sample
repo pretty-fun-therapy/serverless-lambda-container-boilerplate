@@ -1,0 +1,4 @@
+export SERVICE_NAME=my_ecr_repository
+export AWS_REGION=my_aws_region
+export AWS_ACCOUNT_ID=123456789012
+export AWS_PROFILE=my_aws_profile # not needed if using your default aws profile

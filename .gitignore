@@ -1,0 +1,4 @@
+.envrc
+.idea
+.serverless
+node_modules

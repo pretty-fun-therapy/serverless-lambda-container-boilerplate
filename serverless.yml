@@ -1,0 +1,19 @@
+service: ${env:SERVICE_NAME}
+frameworkVersion: '2'
+
+provider:
+  name: aws
+  region: ${env:AWS_REGION}
+  apiGateway:
+    shouldStartNameWithService: true
+
+functions:
+  js-test-container:
+    image: ${env:AWS_ACCOUNT_ID}.dkr.ecr.${env:AWS_REGION}.amazonaws.com/${env:SERVICE_NAME}@${opt:digest}
+    events:
+      - http:
+          path: /
+          method: get
+      - http:
+          path: /{any+}
+          method: ANY
