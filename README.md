@@ -2,13 +2,13 @@
 
 # Configuration
 
-if you are using [envrc], create a .envrc file and specify the following environment variables:  
-SERVICE_NAME=my_ecr_repository
-AWS_REGION=my_aws_region  
-AWS_ACCOUNT_ID=123456789012  
+if you are using [envrc], create a .envrc file and specify the following environment variables:    
+> SERVICE_NAME=my_ecr_repository  
+> AWS_REGION=my_aws_region   
+> AWS_ACCOUNT_ID=123456789012   
 
 If you don't use your default AWS profile, you should also specify it:
-AWS_PROFILE=my_aws_profile
+> AWS_PROFILE=my_aws_profile
 
 *you can use .envrc.sample*
 
