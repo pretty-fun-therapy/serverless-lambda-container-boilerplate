@@ -27,15 +27,16 @@ npm run ecr:create
 # Deploy Function
 
 ```shell script
-npm run docker:build  
+npm run docker:build:node:fastify
 npm run ecr:push
 npm run serverless:deploy
 ```
 
-## Change Image
+# New Images
 
-You can change your Dockerfile to use another image. 
-If you don't want to deploy node, you will still have to use npm for serverless. But you should update your dependencies accordingly.
-
+You can change your Dockerfile to use another image and submit a PR
+You should submit a PR with your app bundled in the directory <language>/<framework>/
+You can add an NPM command to build your image: npm run docker:build:<language>/<framework>
+If you don't use any framework, you should put Vanilla instead.
 
 [envrc]: https://direnv.net/

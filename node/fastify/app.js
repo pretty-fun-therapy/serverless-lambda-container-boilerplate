@@ -2,7 +2,8 @@ const awsLambdaFastify = require('aws-lambda-fastify');
 const fastify = require('fastify');
 const app = fastify();
 
-app.get('/', (request, reply) => reply.send({ msg: 'Hello from Root path' }));
+
+app.get('/', (request, reply) => reply.send({ description: 'node:fastify' }));
 app.get('/ping', (request, reply) => reply.send({ ping: 'pong' }));
 app.post('/posts', (request, reply) => reply.code(201).send(request.body));
 

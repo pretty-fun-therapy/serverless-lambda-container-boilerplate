@@ -1,0 +1,15 @@
+{
+  "name": "serverless-container-fastify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-lambda-fastify": "^1.4.4",
+    "fastify": "^3.9.2"
+  }
+}

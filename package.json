@@ -7,12 +7,10 @@
     "ecr:create": "./scripts/ecr-create-repository.sh",
     "ecr:login": "./scripts/ecr-login.sh",
     "ecr:push": "./scripts/ecr-tag-and-push.sh",
-    "docker:build": "docker build -t $SERVICE_NAME .",
+    "docker:build:node:fastify": "docker build -t $SERVICE_NAME node/fastify/",
     "docker:start": "docker run -p 9000:8080 $SERVICE_NAME:latest",
     "serverless:deploy": "./scripts/sls-deploy.sh"
   },
-  "license": "Meetic / PrettyFunTherapy",
-  "dependencies": {
-    "aws-lambda-fastify": "^1.4.4",
-    "fastify": "^3.9.2"
-  }}
+  "license": "Meetic / PrettyFunTherapy"
+
+}

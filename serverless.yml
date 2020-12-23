@@ -8,7 +8,7 @@ provider:
     shouldStartNameWithService: true
 
 functions:
-  js-test-container:
+  main:
     image: ${env:AWS_ACCOUNT_ID}.dkr.ecr.${env:AWS_REGION}.amazonaws.com/${env:SERVICE_NAME}@${opt:digest}
     events:
       - http:
