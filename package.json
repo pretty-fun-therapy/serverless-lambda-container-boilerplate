@@ -9,6 +9,7 @@
     "ecr:push": "./scripts/ecr-tag-and-push.sh",
     "docker:build:node:fastify": "docker build -t $SERVICE_NAME node/fastify/",
     "docker:build:node:express": "docker build -t $SERVICE_NAME node/express/",
+    "docker:build:php:vanilla": "docker build -t $SERVICE_NAME php/vanilla/",
     "docker:start": "docker run -p 9000:8080 $SERVICE_NAME:latest",
     "serverless:deploy": "./scripts/sls-deploy.sh"
   },

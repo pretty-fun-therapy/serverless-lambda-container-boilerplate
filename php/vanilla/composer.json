@@ -1,0 +1,6 @@
+{
+    "name": "j.coulon/vanilla",
+    "require": {
+        "bref/bref": "^1.0"
+    }
+}

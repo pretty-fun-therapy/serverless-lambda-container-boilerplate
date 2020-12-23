@@ -2,3 +2,5 @@
 .idea
 .serverless
 node_modules
+vendor
+composer.phar
