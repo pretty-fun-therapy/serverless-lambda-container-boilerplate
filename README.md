@@ -27,7 +27,7 @@ npm run ecr:create
 # Deploy Function
 
 ```shell script
-npm run docker:build:node:fastify
+npm run docker:build:<language>:<framework> (eg: npm run docker:build:node:express)
 npm run ecr:push
 npm run serverless:deploy
 ```
